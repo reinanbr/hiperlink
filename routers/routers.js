@@ -61,6 +61,7 @@ questions = [{
 }]
 
 app.get('/questions', (req, res) =>{
+
 	res.render(index+"/questions.ejs", questions)
 })
 

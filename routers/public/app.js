@@ -10,7 +10,9 @@ vidi.controller('video', ($scope) =>{
 
 //jquery
 $(function(){
-
+//chat
+var user = {}
+	var socket = io()
 
 text=''
 
@@ -154,7 +156,7 @@ questu= (i) => {
 //function video
 videu = (i) => {
 	return (`<div id='${quest[i].video.type}'><p>${quest[i].video.title}</p>
-<iframe width="380" height="190"
+<iframe width="300" height="190"
  src="${quest[i].video.link}" frameborder="0" allow="accelerometer; 
 autoplay; encrypted-media; gyroscope; 
 picture-in-picture" allowfullscreen>
@@ -167,7 +169,7 @@ picture-in-picture" allowfullscreen>
 //function formula
 formulu = (i) => {
 	return(`<div id='${quest[i].formula.type}'><p>${quest[i].formula.title}</p>
-<img width="420" height="340"
+<img width="500" height="440"
  src="${quest[i].formula.link}">
 </img>
 <p>_____________________</p>
@@ -207,13 +209,15 @@ opt = []
 //proximo
 $('#proxim').click(function(){
 	//pegar radio
-	console.log(n)
-	inm = 'input[name="q'+n+'"]:checked'
-	console.log(inm)
-	idr = document.querySelector(inm).id
-	console.log(idr)
-	opt[n] = $('#'+idr).val()
-	console.log(opt)
+	
+		console.log(n)
+		inm = 'input[name="q'+n+'"]:checked'
+		console.log(inm)
+		idr = document.querySelector(inm).id
+		console.log(idr)
+		opt[n] = $('#'+idr).val()
+		console.log(opt)
+	
 	
 	$('#painell').html('')
 	n = add(n).next().value
@@ -254,13 +258,15 @@ $('#proxim').click(function(){
 //anterior
 $('#ante').click(function(){
 	//pegar radio
-	console.log(n)
-	inm = 'input[name="q'+n+'"]:checked'
-	console.log(inm)
-	ida = document.querySelector(inm).id
-	console.log(idr)
-	opt[n] = $('#'+ida).val()
-	console.log(opt)
+	
+		console.log(n)
+		inm = 'input[name="q'+n+'"]:checked'
+		console.log(inm)
+		ida = document.querySelector(inm).id
+		console.log(idr)
+		opt[n] = $('#'+ida).val()
+		console.log(opt)
+	
 	
 	
 	$('#painell').html('')
@@ -326,21 +332,18 @@ $('[name="q0"]').click(function(){
 })
 */
 //enviar
-$('#env').click(function(){
+$('#envResp').click(function(){
+	opt[n] = $('[name="q'+n+'"]').val()
 	if(confirm('tem certeza que permite enviar as respostas para o seu professor?')){
-		fetch('/received/'+opt).then(res => {
-				console.log('ok')
-				alert('professor: recebir suas respostas. aguarde minha correção.')
-		})
+		socket.emit('quest', opt)
+		setTimeout(alert('professor: recebir suas respostas. aguarde minha correção.'), 4000)
 	}
 })
 
 //ocultar envio
 
-//chat
-var user = {}
-	var socket = io()
-	
+
+	//chat configs
 	socket.on("usersCount", (users) => {
 		count = users.length
 		$("#count").text(`usuarios online(${count})`)
@@ -380,7 +383,7 @@ var user = {}
 	    $("#msg").val('')
 	    $("#chat")
         .animate({scrollTop: $("#chat")[0]
-        .scrollHeight}, 5000);
+        .scrollHeight}, 100);
 	}
 	
 	socket.on("users", (user) => {
@@ -395,12 +398,12 @@ var user = {}
 		$("#chat").append(`<p>${user.msgEnv}</p>`)
 		   $("#chat")
         .animate({scrollTop: $("#chat")[0]
-        .scrollHeight}, 5000);
+        .scrollHeight}, 100);
 	
 	})
 	
 	socket.on("disconnect", () => {
-		$("#on").text("o servidor está do ar .")
+		$("#on").text("o servidor está fora do ar .")
          $("#inp").text('vc foi desconectado')
 	})
 		

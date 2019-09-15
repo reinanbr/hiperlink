@@ -13,23 +13,23 @@
         </h1>
 <br />
 <br />
-        <div class="login">
+        <div class="center">
 <form method='post' action='login'>
         <label>
         <p><b>Aluno: </b> {{user.name}}</p>
-        <input ng-model=user.name name='student' placeholder='insira seu nome'>
+        <input type='name' ng-model=user.name name='student' placeholder='insira seu nome' required>
         </label> 
          <br />  
 <br />
 <label>
         <p><b>e-mail: </b> {{user.email}}</p>
-        <input ng-model=user.email name='email' placeholder='insira seu email'>
+        <input type='email' ng-model=user.email name='email' placeholder='insira seu email' required>
         </label> 
          <br />  
   <br />
         <label>
             <p><b>Escola :</b> {{user.school}}</p>
-            <input ng-model=user.school name='school' placeholder="insira o nome da sua Escola">
+            <input type='text' ng-model=user.school name='school' placeholder="insira o nome da sua Escola" required>
         </label>
         <br />
         <hr>

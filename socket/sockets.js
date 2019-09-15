@@ -25,6 +25,11 @@ io.on("connection", (socket) => {
 			fn(false)
 		}
 	})
+	
+	socket.on('quest', (opt) => {
+		console.log(opt)
+	})
+	
 	socket.on("chat", (user) => {
 		user.msgEnv = `${sys.datta()}: ${user.name} => ${user.msg}`
 		sys.log(`${user.name}: ${user.msg}`)
