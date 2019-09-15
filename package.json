@@ -1,0 +1,30 @@
+{
+  "name": "hiperlink",
+  "version": "0.0.1",
+  "description": "website for education in physic",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js",
+	"start":"node index.js"
+  },
+  "repository": "git+https://github.com/perseu912/hiperlink.git",
+  "author": "Reinan Bezerra (perseu912)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perseu912/hiperlink/issues"
+  },
+  "homepage": "https://github.com/perseu912/hiperlink#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "http-errors": "^1.7.3",
+    "jsdom": "^15.1.1",
+    "nodemon": "^1.19.2",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0"
+  }
+}

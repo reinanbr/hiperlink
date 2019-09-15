@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html ng-app="app" ng-controller="login">
+
+
+    <head>
+    <% include heads/head %>
+   </head>
+    <body>
+    
+        <h1>
+            {{title}}<p class='material-icons'>book</p>
+        </h1>
+<br />
+<br />
+        <div class="login">
+<form method='post' action='login'>
+        <label>
+        <p><b>Aluno: </b> {{user.name}}</p>
+        <input ng-model=user.name name='student' placeholder='insira seu nome'>
+        </label> 
+         <br />  
+<br />
+<label>
+        <p><b>e-mail: </b> {{user.email}}</p>
+        <input ng-model=user.email name='email' placeholder='insira seu email'>
+        </label> 
+         <br />  
+  <br />
+        <label>
+            <p><b>Escola :</b> {{user.school}}</p>
+            <input ng-model=user.school name='school' placeholder="insira o nome da sua Escola">
+        </label>
+        <br />
+        <hr>
+        <br />
+        
+        <button type='submit'><b>entrar</b></button>
+        </form>
+        </div>
+<script src='app.js'></script>
+ </script>
+    </body>
+</html>
