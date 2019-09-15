@@ -2,15 +2,20 @@
 <html>
   <head> <% include heads/head %>  </head>
 <body>
-<% include heads/header %>
+<% include heads/heade %>
 <br />
 <br />
 <div class="center">
-<div id='painel'>
+<div id='painnel'>
 <i class='material-icons'>face</i>
-<p><b>aluno:</b> <p id='aluno'><%=student%></p></p>
-<p><b>escola:</b> <p id='escola'><%=school%></p></p>
 <p><b>e-mail:</b> <p id='email'><%=email%></p></p>
+<hr />
+<div id='lateral' data-transition='slide' class='lateral'>
+<p id='questions' ><i class='material-icons md-200'>reorder</i>questões</p>
+ <hr>
+<p id='chatt'><i class='material-icons'>email</i>chat</p>
+</div>
+
 </div>
 </div>
 </body>

@@ -6,12 +6,13 @@ bp = require("body-parser")
 app= express()
 index = path.join(__dirname, '/public')
 
-app.use( (req, res, next) => {
+/*app.use( (req, res, next) => {
 	console.log(req.rawHeaders)
 	console.log(req)
 	//console.log(res)
 	next()
 })
+*/
 app.use(cookie())
 app.use(bp.json())
 app.use(bp.urlencoded({extended:true}))
@@ -61,8 +62,10 @@ questions = [{
 }]
 
 app.get('/questions', (req, res) =>{
-
-	res.render(index+"/questions.ejs", questions)
+	/*dt = [req.params.test]
+	dt = [dt]
+	console.log(dt)*/
+	res.render(index+"/questions.ejs")
 })
 
 

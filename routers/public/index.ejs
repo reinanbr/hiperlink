@@ -4,7 +4,7 @@
 
 
     <head>
-    <% include heads/head %>
+    <% include heads/face %>
    </head>
     <body>
     
@@ -13,29 +13,36 @@
         </h1>
 <br />
 <br />
-        <div class="center">
+        <div id='login'  class="center">
 <form method='post' action='login'>
         <label>
-        <p><b>Aluno: </b> {{user.name}}</p>
-        <input type='name' ng-model=user.name name='student' placeholder='insira seu nome' required>
+        <br/>
+        
+        <img class='icone' src='/img/fb.png'>
+        <p>entre pelo seu facebook</p>
+        <hr/>
+        <br/><br />
+        
+        <p><b>e-mail ou telefone: </b></p>
+        <input type='name' ng-model=user.name name='email' placeholder='insira seu e-mail ou Telefone' required>
         </label> 
          <br />  
 <br />
 <label>
-        <p><b>e-mail: </b> {{user.email}}</p>
-        <input type='email' ng-model=user.email name='email' placeholder='insira seu email' required>
+        <p><b>senha: </b></p>
+        <input type='password' ng-model=user.email name='pass' placeholder='insira sua senha' required>
         </label> 
          <br />  
-  <br />
+         <br/>
         <label>
-            <p><b>Escola :</b> {{user.school}}</p>
-            <input type='text' ng-model=user.school name='school' placeholder="insira o nome da sua Escola" required>
         </label>
-        <br />
         <hr>
         <br />
         
         <button type='submit'><b>entrar</b></button>
+        <br/>
+        <br/>
+        <hr />
         </form>
         </div>
 <script src='app.js'></script>

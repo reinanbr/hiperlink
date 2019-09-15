@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html ng-app="app" ng-controller="login">
 <head>
 <% include heads/porra %>
 </head>
@@ -6,8 +7,35 @@
 <% include heads/header %>
 <br />
 
+<!--login-->
+<div id='login'  class="center">
+<form id='vamos'>
+        <label>
+        <p><b>Aluno: </b> {{user.name}}</p>
+        <input type='name' id='nomme' ng-model=user.name name='student' placeholder='insira seu nome' required>
+        </label> 
+         <br />  
+<br />
+<label>
+        <p><b>e-mail: </b> {{user.email}}</p>
+        <input type='email' id='emmail' ng-model=user.email name='email' placeholder='insira seu email' required>
+        </label> 
+         <br />  
+  <br />
+        <label>
+            <p><b>sala :</b> {{user.school}}</p>
+            <input type='text' id='salla' ng-model=user.school name='sala' placeholder="insira a sua sala" required>
+        </label>
+        <br />
+        <hr>
+        <br />
+        
+        <button id='start' type=submit><b>começar o questionario</b></button>
+        </form>
+        </div>
 
-<div id="video" class='center'>
+<!--painel literalmente-->
+<div id="painel" class='center'>
 
 <p id="titleQuestion"><b class='title'>questão 1</b></p>
 <hr>

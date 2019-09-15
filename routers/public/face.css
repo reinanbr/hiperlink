@@ -42,7 +42,7 @@ h1{
     padding-bottom:1%;
     margin:0;
     text-align:center;
-	font-size:220%;
+	font-size:250%;
     color:white;
 background: linear-gradient(32deg, #037b00, #178f14, #0a5d08);
 background-size: 400% 400%;
@@ -173,7 +173,7 @@ animation: AnimationName 30s ease infinite;
     border-radius: 15px 20px;
     border-color: yellow;
     width:90%;
-    background: linear-gradient(32deg, #037b00, #178f14, #0a5d08);
+    background: linear-gradient(32deg,  #1a3cff, #1a7cff);
 background-size: 1000% 1000%;
 
 -webkit-animation: AnimationName 30s ease infinite;
@@ -265,3 +265,8 @@ input[type="checkbox"] + label span {
     cursor:pointer;
 }
 
+.icone{
+	border-radius: 100px 100px;
+	height: 57px;
+	width:55px;
+}

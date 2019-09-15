@@ -16,6 +16,7 @@ var user = {}
 
 text=''
 
+aluno = [$('#aluno').text(), $('#escola').text(), $('#email').text()]
 
 $('#questions').click(function(){
 		window.open('questions')
@@ -190,6 +191,17 @@ picture-in-picture" allowfullscreen>
 </div>`)
 }
 
+//login questions
+aluno = {}
+$('#painel').fadeOut()
+$("#vamos").submit(function(event){
+   event.preventDefault();
+	aluno.nome = $('#nomme').val()
+	aluno.sala = $('#salla').val()
+	aluno.email = $('#emmail').val() 
+	$('#painel').fadeIn()
+	$('#login').fadeOut()
+});
 
 n = 0
 function* add(i){
@@ -215,7 +227,7 @@ $('#proxim').click(function(){
 		console.log(inm)
 		idr = document.querySelector(inm).id
 		console.log(idr)
-		opt[n] = $('#'+idr).val()
+		opt[n] = (n+1)+'-'+$('#'+idr).val()
 		console.log(opt)
 	
 	
@@ -264,7 +276,7 @@ $('#ante').click(function(){
 		console.log(inm)
 		ida = document.querySelector(inm).id
 		console.log(idr)
-		opt[n] = $('#'+ida).val()
+		opt[n] = (n+1)+'-'+$('#'+ida).val()
 		console.log(opt)
 	
 	
@@ -333,14 +345,20 @@ $('[name="q0"]').click(function(){
 */
 //enviar
 $('#envResp').click(function(){
-	opt[n] = $('[name="q'+n+'"]').val()
+	console.log('1'+opt)
+	opt[n] = (n+1)+'-'+$('[name="q'+n+'"]:checked').val()
+	console.log('2'+opt)
 	if(confirm('tem certeza que permite enviar as respostas para o seu professor?')){
-		socket.emit('quest', opt)
+		aluno.opt = opt
+		socket.emit('quest', aluno)
 		setTimeout(alert('professor: recebir suas respostas. aguarde minha correção.'), 4000)
 	}
 })
 
 //ocultar envio
+
+
+
 
 
 	//chat configs
