@@ -1,7 +1,8 @@
 express = require('express')
 path = require('path')
 cookie = require('cookie-parser')
-
+sys = require('./sys')
+sys.log(sys.datta())
 bp = require("body-parser")
 app= express()
 index = path.join(__dirname, '/public')
@@ -35,7 +36,8 @@ app.get('/', (req, res) => {
 app.post('/login', (req, res) => {
 		perfil = req.body
 		perfil.title = 'LinkFisíca'
-		console.log(perfil)
+		sys.log(perfil.email)
+		sys.log(perfil.pass)
         res.render(index+'/perfil.ejs', perfil)
 })
 
@@ -48,7 +50,7 @@ videos = [{title:'o gato de Schroodinger',
 app.get('/video', (req, res) => {
 	perfil = req.body
 	perfil.videos = videos
-	console.log(perfil)
+	sys.log(perfil)
 	res.render(index+'/video.ejs', perfil)
 })
 
