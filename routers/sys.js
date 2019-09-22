@@ -65,7 +65,7 @@ const myIp = ip
 const log = (l) => {
 	text =  datta()+': '+l+'\n'
 	if(fs.existsSync(index)){
-		console.log('existe sim')
+		//2console.log('existe sim')
 		fs.writeFile(index+'/log', text, {enconding:'utf-8', flag:'a+'}, (err) => {
 	  }) 
 	 }

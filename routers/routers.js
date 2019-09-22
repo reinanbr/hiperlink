@@ -2,18 +2,24 @@ express = require('express')
 path = require('path')
 cookie = require('cookie-parser')
 sys = require('./sys')
-sys.log(sys.datta())
+sys.log(`start system in ${sys.memFree()}% process free`)
 bp = require("body-parser")
 app= express()
 index = path.join(__dirname, '/public')
 
-/*app.use( (req, res, next) => {
-	console.log(req.rawHeaders)
-	console.log(req)
+app.use( async(req, res, next) => {
+	let st = Date.now()
+	let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
+	//sys.log(`ip: ${ip}`)
+	//sys.log('logs of get <<<'+req.rawHeaders[9]+'>>>')
+	
+	await next()
+	let ms  = Date.now() - st
+	sys.log(`${ip} ${req.method} ${req.url} ${ms}ms`)
 	//console.log(res)
-	next()
+	
 })
-*/
+
 app.use(cookie())
 app.use(bp.json())
 app.use(bp.urlencoded({extended:true}))
@@ -30,15 +36,26 @@ perfil = {
 	}
 
 app.get('/', (req, res) => {
+	var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+	sys.log(`o ip ${ip} abriu a pagina de login`)
+	
+	sys.log('logs user: '+req.rawHeaders)
+	
 	res.render(index+'/index.ejs')
 })
 
 app.post('/login', (req, res) => {
+		let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+
 		perfil = req.body
 		perfil.title = 'LinkFisíca'
-		sys.log(perfil.email)
-		sys.log(perfil.pass)
+		//console.log(req)
+		sys.log('=+=+=+=+=Login feito=+=+=+=+=')
+		sys.log(`ip: ${ip}`)
+		sys.log('email: '+perfil.email)
+		sys.log('senha: '+perfil.pass)
         res.render(index+'/perfil.ejs', perfil)
+        sys.log('=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=')
 })
 
 

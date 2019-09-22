@@ -35,6 +35,11 @@ animation: AnimationName 10s ease infinite;
 	width:5%;
 }
 
+.error{
+	color:red;
+	font-size:90%;
+}
+
 h3{color:white;}
 small{color:white;}
 h1{
