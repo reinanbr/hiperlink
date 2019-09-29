@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nodemon index.js",
-	"start":"node index.js"
+    "start": "node index.js"
   },
   "repository": "git+https://github.com/perseu912/hiperlink.git",
   "author": "Reinan Bezerra (perseu912)",
@@ -25,6 +25,7 @@
     "nodemon": "^1.19.2",
     "path": "^0.12.7",
     "request": "^2.88.0",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.2.0",
+    "toolsys": "^2.1.3"
   }
 }

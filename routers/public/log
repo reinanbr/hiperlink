@@ -269,3 +269,13 @@
 [19/9  9:20:28]: ::1 GET /img/q1.png 0ms
 [19/9  9:20:28]: ::1 GET /favicon.ico 1ms
 [21/9  18:40:3]: start system in 1.84% process free
+[28/9  19:32:20]: start system in 2.54% process free
+[28/9  19:32:36]: ::1 GET /questions 32ms
+[28/9  19:32:36]: ::1 GET /jquery.js 3ms
+[28/9  19:32:36]: ::1 GET /app.js 1ms
+[28/9  19:32:36]: ::1 GET /porra.css 1ms
+[28/9  19:32:36]: ::1 GET /img/video.png 2ms
+[28/9  19:32:36]: ::1 GET /img/simulador.png 1ms
+[28/9  19:32:37]: ::1 GET /img/formula.png 1ms
+[28/9  19:32:38]: ::1 GET /img/q1.png 6ms
+[28/9  19:32:38]: ::1 GET /favicon.ico 2ms

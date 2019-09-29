@@ -1,6 +1,6 @@
 const socket = require('socket.io')
 const server = require('./server')
-const sys = require("../system")
+const sys = require("toolsys")
 
 const io = socket(server)
 
@@ -27,7 +27,11 @@ io.on("connection", (socket) => {
 	})
 	
 	socket.on('quest', (opt) => {
-		console.log(opt)
+		sys.log('=====quest=====')
+		sys.log('nome: '+opt.nome)
+		sys.log('sala: '+opt.sala)
+		sys.log('resp: '+opt.opt)
+		sys.log('===============')
 	})
 	
 	socket.on("chat", (user) => {
