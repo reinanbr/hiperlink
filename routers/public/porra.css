@@ -1,7 +1,7 @@
 body{
     margin:0;
     text-align:center;
-    background: linear-gradient(white);
+    background: linear-gradient(270deg, #7b0457, #04137b, #5f047b);
 background-size: 1000% 1000%;
 
 -webkit-animation: AnimationName 15s ease infinite;
