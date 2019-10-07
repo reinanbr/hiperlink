@@ -24,7 +24,7 @@ animation: AnimationName 15s ease infinite;
     100%{background-position:0% 37%}
 }
     font-color: black;
-    font-size: 90%;
+    font-size: 200%;
 	font-family: Roboto;
 }
 
