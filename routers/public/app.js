@@ -130,7 +130,8 @@ quest = [{
                  c:'50pa',
                  d:'80pa',
                  e:'100pa',
-       }
+       },
+		img:'/img/q3.png',
 },
 {
         text:'estudando a pressão em fluidos, vê-se que a variação dea pressão nas aguas do mar é proporcional a profundidade h. No entando, a variação da pressão atmosférica quando se sobe montanhas elevadas, não é exatamente proporcional à altura. Isto se deve ao fato:',
@@ -140,17 +141,19 @@ quest = [{
 		c:"o ar possui baixa densidade",
 		d:"o ar possui baixa viscosidade",
 		e:"o ar é compressivel",
-	}
+	},
+		img:'/img/q5.png',
 },
 {
-	text:"Um garoto toma refrigerante usando um canudinho. Podemos afirmar corretamwnte que ao puxar o ar pela boca, o menino:",
+	text:"Um garoto toma refrigerante usando um canudinho. Podemos afirmar corretamente que ao puxar o ar pela boca, o menino:",
 	opt:{
 		a:"reduz a pressăo dentro do canudinho",
 		b:"aumenta a pressăo fora do canudinho",
 		c:"aumenta a pressăo dentro do canudinho",
 		d:"reduz a pressăo fora do canudinho",
 		e:"reduz a acelaraçăo da gravidade dentro do canudinho"
-	}
+	},
+		img:'/img/q6.png',
 },
 {
 	text:'Uma particula, inicialmente na posição A, dentro de um recipiente com àgua, é levada até o ponto B, e em seguida, logo até o ponto C, (Ver figura). A distância, vertical AB é igual a 4cm, e a distância vertical BC é 3cm. Considerando a aceleração da gravidade como g = 10m/s² e a densidade da àgua p = 1000kg/m²,  o módulo da diferença de pressão entre as suas posições iniciais e finais é, em N/m², igual a :',
@@ -160,7 +163,8 @@ quest = [{
                 c:300,
                 d:400,
                 e:500,
-         }
+         },
+         img:'/img/q7.png',
 },
 {
         text:'UFRN) O princípio de Pascal diz que qualquer aumento de pressão num fluido se transmite integralmente a todo o fluido e às paredes do recipiente que o contém. Uma experiência simples pode ser realizada, até mesmo em casa, para verificar esse princípio e a influência da pressão atmosférica sobre fluidos. São feitos três furos, todos do mesmo diâmetro, na vertical, na metade superior de uma garrafa plástica de refrigerante vazia, com um deles a meia distância dos outros dois. A seguir, enche-se a garrafa com água, até um determinado nível acima do furo superior; tampa-se a garrafa, vedando-se totalmente o gargalo, e coloca-se a mesma em pé, sobre uma superfície horizontal. Abaixo, estão ilustradas quatro situações para representar como ocorreria o escoamento inicial da água através dos furos, após efetuarem-se todos esses procedimentos. Assinale a opção correspondente ao que ocorrerá na prática.',
@@ -169,7 +173,8 @@ quest = [{
 		b:'b',
 		c:'c',
 		d:'d',
-	}
+	},
+		img:'/img/q8.png',
 },
 {
 	text:'Um corpo sólido de massa de 500g e volume de 625 centimétros cubicos, encontra-se em repouso no interior de um liquido em equilibrio, conforme a figura. relativamente a esta situação, marque a alternativa incorreta:',
@@ -179,7 +184,8 @@ quest = [{
 		c:'atua sobre o corpo, de modo verticalmente para cima, uma força de módulo igual ao peso do volume de liguido deslocado',
 		d:'o corpo desloca um volume de liguido equivalente a massa de 500g',
 		e:'o volume de liguido que o corpo desloca, é igual ao seu proprio volume',
-	}
+	},
+		img:'/img/q9.png'
 },
 {
 	text:'um corpo está submerso em equilibrio no interior de um liguido homogêneo de densidade de 0,7g por centimetro cubico. Se for colocado num recipiente que contenha àgua de densidade de 1g por centimetro cubico, ele:',
@@ -188,7 +194,8 @@ quest = [{
 		b:'ficarà parcialmente submerso',
 		c:'afundarà com velocidade constante',
 		d:'afundarà com velocidade variavel',
-	}
+	},
+		img:'/img/q10.png',
 }
 ]
 
@@ -296,9 +303,8 @@ $('#proxim').click(function(){
 		console.log(inm)
 		idr = document.querySelector(inm).id
 		console.log(idr)
-		opt[n] = (n+1)+'-'+$('#'+idr).val()
+		opt[n] = $('#'+idr).val()
 		console.log(opt)
-	
 	
 	$('#painell').html('')
 	n = add(n).next().value
@@ -332,7 +338,7 @@ $('#proxim').click(function(){
             $('#proxim').fadeOut()
         }
 	
-	$('#'+ida).click()
+	$('#qe'+opt[n]+n).click()
     console.log($('#'+ida).val())
 })
 
@@ -344,10 +350,9 @@ $('#ante').click(function(){
 		inm = 'input[name="q'+n+'"]:checked'
 		console.log(inm)
 		ida = document.querySelector(inm).id
-		console.log(idr)
-		opt[n] = (n+1)+'-'+$('#'+ida).val()
+		//console.log(idr)
+		opt[n] = $('#'+ida).val()
 		console.log(opt)
-	
 	
 	
 	$('#painell').html('')
@@ -381,7 +386,7 @@ $('#ante').click(function(){
         if(n<=quest.length-1){
             $('#proxim').fadeIn()
         }
-    $('#'+idr).click()
+    $('#qe'+opt[n]+n).click()
     console.log($('#'+idr).val())
 })
 
@@ -415,10 +420,14 @@ $('[name="q0"]').click(function(){
 //enviar
 $('#envResp').click(function(){
 	console.log('1'+opt)
-	opt[n] = (n+1)+'-'+$('[name="q'+n+'"]:checked').val()
+	opt[n] = $('[name="q'+n+'"]:checked').val()
 	console.log('2'+opt)
 	if(confirm('tem certeza que permite enviar as respostas para o seu professor?')){
-		aluno.opt = opt
+			let nn = 0
+ 		  aluno.opt = opt.map((o)  => {
+				nn+=1
+				return (nn+'-'+o)
+			})
 		socket.emit('quest', aluno)
 		setTimeout(alert('professor: recebir suas respostas. aguarde minha correção.'), 4000)
 	}
@@ -455,6 +464,7 @@ $('#envResp').click(function(){
 	}
 			
 	socket.on('connect', () => {
+		$('#oon').html('o servidor está online')
 		$("#on").text("o servidor está online.")
 	})
 	
@@ -492,6 +502,7 @@ $('#envResp').click(function(){
 	socket.on("disconnect", () => {
 		$("#on").text("o servidor está fora do ar .")
          $("#inp").text('vc foi desconectado')
+         $('#oon').html('o servidor está fora do ar')
 	})
 		
 })
