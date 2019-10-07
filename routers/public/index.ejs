@@ -1,55 +1,73 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html ng-app="app" ng-controller="login">
-
-
-    <head>
-    <% include heads/face %>
-   </head>
-    <body>
-    
-        <h1>
-            {{title}}<p class='material-icons'>book</p>
-        </h1>
+<head>
+<% include heads/porra %>
+</head>
+<body>
+<% include heads/header %>
 <br />
-<br />
-        <div id='login'  class="center">
-<form method='post' id='formfb' action='login'>
+
+<!--login-->
+<div id='login'  class="center">
+<form id='vamos'>
         <label>
-        <br/>
-        
-        <img class='icone' src='/img/fb.png'>
-        <p>entre pelo seu facebook</p>
-        <hr/>
-        <br/><br />
-        
-        <p><b>e-mail ou telefone: </b></p>
-        <input type='name' id='email' ng-model=user.name name='email' placeholder='insira seu e-mail ou Telefone' required><br /> </input> 
-<br />
-<label>
-        <p><b>senha: </b></p>
-        <input type='password' id='pass' ng-model=user.email name='pass' placeholder='insira sua senha' required />
+        <br />
+        <p><b>Aluno: </b> {{user.name}}</p>
+        <input type='name' id='nomme' ng-model=user.name name='student' placeholder='insira seu nome' required>
+        </label> 
          <br />  
-         <br/>
+<br />
+
         <label>
+            <p><b>sala :</b> {{user.school}}</p>
+            <input type='text' id='salla' ng-model=user.school name='sala' placeholder="insira a sua sala" required>
         </label>
+        <br />
+        <br />
         <hr>
         <br />
         
-        <button type='submit'><b>entrar</b></button>
-        <br/>
-        <br/>
-        <hr />
+        <button id='start' type=submit><b>começar o questionario</b></button>
         </form>
         </div>
-        
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 
-        
+<!--painel literalmente-->
+<div id="painel" class='center'>
 
-<script src='login.js'></script>
- </script>
-<div class='dev'>Reinan 2019©</div> 
-   </body>
+<p id="titleQuestion"><b class='title'>questão 1</b></p>
+<hr>
+
+<!--Div icones-->
+<div id class='direit'>
+<img src="/img/video.png" id='video_0' class='icone'></img>
+<img src='/img/simulador.png' id='simulador_0' class='icone'></img>
+<img src='/img/formula.png' id='formula_0' class='icone'></img>
+
+</div>
+<div id='painell'></div>
+<form id='test' action='/resp'>
+
+
+<p>_____________________</p>
+
+
+<br>
+<div id='questao'></div>
+
+<br>
+<br>
+</form>
+<div class='direit'>
+<button class='direit' id='ante'>anterior</button>
+</div>
+
+<div class='esquerd'>
+<button id='proxim'>próximo</button>
+</div>
+<small id='ale'><p>não clique em enviar antes de responder as questões</p></small>
+<button id='envResp'>enviar</button>
+</div>
+</div>
+
+</body>
 </html>

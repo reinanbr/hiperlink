@@ -121,9 +121,76 @@ quest = [{
 		link:'https://www.google.com/',
 		type:'energia'
 	},
+},
+{
+	text:'O bloco na figura, com massa de 5 kg, sujeito a força de intensidade de  20N, está apoiado em uma mesa horizontal. se a superficie da área de contato do bloco é de 0,5cm², a pressão exercida pelo bloco sobre a mesa vale:',
+        opt:{
+                 a:'40pa',
+                 b:'30pa',
+                 c:'50pa',
+                 d:'80pa',
+                 e:'100pa',
+       }
+},
+{
+        text:'estudando a pressão em fluidos, vê-se que a variação dea pressão nas aguas do mar é proporcional a profundidade h. No entando, a variação da pressão atmosférica quando se sobe montanhas elevadas, não é exatamente proporcional à altura. Isto se deve ao fato:',
+        opt:{
+		a:"A aceleraçăo da gravidade varia mais no ar do que na agua",
+		b:"A aceleraçăo da gravidade varia mais no água do que no ar",
+		c:"o ar possui baixa densidade",
+		d:"o ar possui baixa viscosidade",
+		e:"o ar é compressivel",
+	}
+},
+{
+	text:"Um garoto toma refrigerante usando um canudinho. Podemos afirmar corretamwnte que ao puxar o ar pela boca, o menino:",
+	opt:{
+		a:"reduz a pressăo dentro do canudinho",
+		b:"aumenta a pressăo fora do canudinho",
+		c:"aumenta a pressăo dentro do canudinho",
+		d:"reduz a pressăo fora do canudinho",
+		e:"reduz a acelaraçăo da gravidade dentro do canudinho"
+	}
+},
+{
+	text:'Uma particula, inicialmente na posição A, dentro de um recipiente com àgua, é levada até o ponto B, e em seguida, logo até o ponto C, (Ver figura). A distância, vertical AB é igual a 4cm, e a distância vertical BC é 3cm. Considerando a aceleração da gravidade como g = 10m/s² e a densidade da àgua p = 1000kg/m²,  o módulo da diferença de pressão entre as suas posições iniciais e finais é, em N/m², igual a :',
+        opt:{
+                a:'100',
+                b:200,
+                c:300,
+                d:400,
+                e:500,
+         }
+},
+{
+        text:'UFRN) O princípio de Pascal diz que qualquer aumento de pressão num fluido se transmite integralmente a todo o fluido e às paredes do recipiente que o contém. Uma experiência simples pode ser realizada, até mesmo em casa, para verificar esse princípio e a influência da pressão atmosférica sobre fluidos. São feitos três furos, todos do mesmo diâmetro, na vertical, na metade superior de uma garrafa plástica de refrigerante vazia, com um deles a meia distância dos outros dois. A seguir, enche-se a garrafa com água, até um determinado nível acima do furo superior; tampa-se a garrafa, vedando-se totalmente o gargalo, e coloca-se a mesma em pé, sobre uma superfície horizontal. Abaixo, estão ilustradas quatro situações para representar como ocorreria o escoamento inicial da água através dos furos, após efetuarem-se todos esses procedimentos. Assinale a opção correspondente ao que ocorrerá na prática.',
+	opt:{
+		a:'a',
+		b:'b',
+		c:'c',
+		d:'d',
+	}
+},
+{
+	text:'Um corpo sólido de massa de 500g e volume de 625 centimétros cubicos, encontra-se em repouso no interior de um liquido em equilibrio, conforme a figura. relativamente a esta situação, marque a alternativa incorreta:',
+	opt:{
+		a:'a densidade do liguido é igual a 0,800g por centimetro cubico',
+		b:'se por um procedimento externo, o bolume do corpo aumentar, ele afundará, e exercerá força sobre o fundo do recipiente',
+		c:'atua sobre o corpo, de modo verticalmente para cima, uma força de módulo igual ao peso do volume de liguido deslocado',
+		d:'o corpo desloca um volume de liguido equivalente a massa de 500g',
+		e:'o volume de liguido que o corpo desloca, é igual ao seu proprio volume',
+	}
+},
+{
+	text:'um corpo está submerso em equilibrio no interior de um liguido homogêneo de densidade de 0,7g por centimetro cubico. Se for colocado num recipiente que contenha àgua de densidade de 1g por centimetro cubico, ele:',
+	opt:{
+		a:'não flutuarà',
+		b:'ficarà parcialmente submerso',
+		c:'afundarà com velocidade constante',
+		d:'afundarà com velocidade variavel',
+	}
 }
 ]
-
 
 /***
 for(i in videos){
@@ -133,8 +200,7 @@ for(i in videos){
 autoplay; encrypted-media; gyroscope; 
 picture-in-picture" allowfullscreen>
 </iframe>
-<p>_____________________</p>
-<br><br>
+<p>_____________________r><br>
 </div>`
 	$('#videoAula').append(div)
 	console.debug(i);

