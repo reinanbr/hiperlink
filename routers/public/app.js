@@ -92,8 +92,8 @@ $(function() {
                 type: 'energia'
             },
             simulador: {
-                title: 'simulador 1',
-                link: 'https://www.google.com/',
+                title: 'energia cinética',
+                link: 'https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_pt_BR.html',
                 type: 'energia'
             },
         },
@@ -118,8 +118,8 @@ $(function() {
                 type: 'energia',
             },
             simulador: {
-                title: 'simulador 1',
-                link: 'https://www.google.com/',
+                title: 'conservação de energia',
+                link: 'https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_pt_BR.html',
                 type: 'energia'
             },
         },
@@ -134,21 +134,21 @@ $(function() {
                 e: "o ar é compressivel",
             },
             img: '/img/q5.png',
-	    video: {
-		title:'pressão e fluidos',
-		link:"https://www.youtube.com/embed/-hQiM9wfswk",
-		type:'fluidos',
-	   },
-	   formula:{
-		title:'pressão e fluidos',
-		link:'/img/f4.png',
-		type:'fluido',
-	  },
-	   simulador:{
-		title:'pressão e fluidos',
-	  	link:'',
-		type:'fluidos',
-	  },
+            video: {
+                title: 'pressão e fluidos',
+                link: "https://www.youtube.com/embed/fHXIyKetL1k?start=5",
+                type: 'fluidos',
+            },
+            formula: {
+                title: 'pressão e fluidos',
+                link: '/img/f4.png',
+                type: 'fluido',
+            },
+            simulador: {
+                title: 'pressão e fluidos',
+                link: 'https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_pt_BR.html',
+                type: 'fluidos',
+            },
         },
         {
             text: "Um garoto toma refrigerante usando um canudinho. Podemos afirmar corretamente que ao puxar o ar pela boca, o menino:",
@@ -160,21 +160,21 @@ $(function() {
                 e: "reduz a acelaraçăo da gravidade dentro do canudinho"
             },
             img: '/img/q6.png',
-	video: {
-                title:'pressão e fluidos',
-                link:"https://www.youtube.com/embed/-hQiM9wfswk",
-                type:'fluidos',
-           },
-           formula:{
-                title:'pressão e fluidos',
-                link:'/img/f4.png',
-                type:'fluido',
-          },
-           simulador:{
-                title:'pressão e fluidos',
-                link:'',
-                type:'fluidos',
-          },
+            video: {
+                title: 'pressão e fluidos',
+                link: 'https://www.youtube.com/embed/fHXIyKetL1k?start=5',
+                type: 'fluidos'
+            },
+            formula: {
+                title: 'pressão e fluidos',
+                link: '/img/f4.png',
+                type: 'fluido',
+            },
+            simulador: {
+                title: 'pressão e fluidos',
+                link: 'https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_pt_BR.html',
+                type: 'fluidos',
+            },
         },
         {
             text: 'Uma particula, inicialmente na posição A, dentro de um recipiente com àgua, é levada até o ponto B, e em seguida, logo até o ponto C, (Ver figura). A distância, vertical AB é igual a 4cm, e a distância vertical BC é 3cm. Considerando a aceleração da gravidade como g = 10m/s² e a densidade da àgua p = 1000kg/m²,  o módulo da diferença de pressão entre as suas posições iniciais e finais é, em N/m², igual a :',
@@ -186,9 +186,24 @@ $(function() {
                 e: 500,
             },
             img: '/img/q7.png',
+            video: {
+                title: 'pressão e fluidos',
+                link: 'https://www.youtube.com/embed/fHXIyKetL1k?start=5',
+                type: 'fluidos'
+            },
+            formula: {
+                title: 'pressão e fluidos',
+                link: '/img/f4.png',
+                type: 'fluido',
+            },
+            simulador: {
+                title: 'pressão e fluidos',
+                link: 'https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_pt_BR.html',
+                type: 'fluidos',
+            },
         },
         {
-            text: 'UFRN) O princípio de Pascal diz que qualquer aumento de pressão num fluido se transmite integralmente a todo o fluido e às paredes do recipiente que o contém. Uma experiência simples pode ser realizada, até mesmo em casa, para verificar esse princípio e a influência da pressão atmosférica sobre fluidos. São feitos três furos, todos do mesmo diâmetro, na vertical, na metade superior de uma garrafa plástica de refrigerante vazia, com um deles a meia distância dos outros dois. A seguir, enche-se a garrafa com água, até um determinado nível acima do furo superior; tampa-se a garrafa, vedando-se totalmente o gargalo, e coloca-se a mesma em pé, sobre uma superfície horizontal. Abaixo, estão ilustradas quatro situações para representar como ocorreria o escoamento inicial da água através dos furos, após efetuarem-se todos esses procedimentos. Assinale a opção correspondente ao que ocorrerá na prática.',
+            text: '(UFRN) O princípio de Pascal diz que qualquer aumento de pressão num fluido se transmite integralmente a todo o fluido e às paredes do recipiente que o contém. Uma experiência simples pode ser realizada, até mesmo em casa, para verificar esse princípio e a influência da pressão atmosférica sobre fluidos. São feitos três furos, todos do mesmo diâmetro, na vertical, na metade superior de uma garrafa plástica de refrigerante vazia, com um deles a meia distância dos outros dois. A seguir, enche-se a garrafa com água, até um determinado nível acima do furo superior; tampa-se a garrafa, vedando-se totalmente o gargalo, e coloca-se a mesma em pé, sobre uma superfície horizontal. Abaixo, estão ilustradas quatro situações para representar como ocorreria o escoamento inicial da água através dos furos, após efetuarem-se todos esses procedimentos. Assinale a opção correspondente ao que ocorrerá na prática.',
             opt: {
                 a: 'a',
                 b: 'b',
@@ -196,21 +211,21 @@ $(function() {
                 d: 'd',
             },
             img: '/img/q8.png',
-	video: {
-                title:'pressão e fluidos',
-                link:"https://www.youtube.com/embed/-hQiM9wfswk",
-                type:'fluidos',
-           },
-           formula:{
-                title:'pressão e fluidos',
-                link:'/img/f4.png',
-                type:'fluido',
-          },
-           simulador:{
-                title:'pressão e fluidos',
-                link:'',
-                type:'fluidos',
-          },
+            video: {
+                title: 'pressão e fluidos',
+                link: "https://www.youtube.com/embed/fHXIyKetL1k?start=5",
+                type: 'fluidos',
+            },
+            formula: {
+                title: 'pressão e fluidos',
+                link: '/img/f4.png',
+                type: 'fluido',
+            },
+            simulador: {
+                title: 'pressão e fluidos',
+                link: 'https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_pt_BR.html',
+                type: 'fluidos',
+            },
         },
         {
             text: 'Um corpo sólido de massa de 500g e volume de 625 centimétros cubicos, encontra-se em repouso no interior de um liquido em equilibrio, conforme a figura. relativamente a esta situação, marque a alternativa incorreta:',
@@ -222,21 +237,21 @@ $(function() {
                 e: 'o volume de liguido que o corpo desloca, é igual ao seu proprio volume',
             },
             img: '/img/q9.png',
-	video: {
-                title:'pressão e fluidos',
-                link:"https://www.youtube.com/embed/-hQiM9wfswk",
-                type:'fluidos',
-           },
-           formula:{
-                title:'pressão e fluidos',
-                link:'/img/f4.png',
-                type:'fluido',
-          },
-           simulador:{
-                title:'pressão e fluidos',
-                link:'',
-                type:'fluidos',
-          },
+            video: {
+                title: 'pressão e fluidos',
+                link: "https://www.youtube.com/embed/fHXIyKetL1k?start=5",
+                type: 'fluidos',
+            },
+            formula: {
+                title: 'pressão e fluidos',
+                link: '/img/f4.png',
+                type: 'fluido',
+            },
+            simulador: {
+                title: 'pressão e fluidos',
+                link: 'https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_pt_BR.html',
+                type: 'fluidos',
+            },
         },
         {
             text: 'um corpo está submerso em equilibrio no interior de um liguido homogêneo de densidade de 0,7g por centimetro cubico. Se for colocado num recipiente que contenha àgua de densidade de 1g por centimetro cubico, ele:',
@@ -246,24 +261,24 @@ $(function() {
                 c: 'afundarà com velocidade constante',
                 d: 'afundarà com velocidade variavel',
             },
-	img: '/img/q10.png',
-        video: {
-                title:'pressão e fluidos',
-                link:"https://www.youtube.com/embed/-hQiM9wfswk",
-                type:'fluidos',
-           },
-           formula:{
-                title:'pressão e fluidos',
-                link:'/img/f4.png',
-                type:'fluido',
-          },
-           simulador:{
-                title:'pressão e fluidos',
-                link:'',
-                type:'fluidos',
-          },
+            img: '/img/q10.png',
+            video: {
+                title: 'pressão e fluidos',
+                link: "https://www.youtube.com/embed/fHXIyKetL1k?start=5",
+                type: 'fluidos',
+            },
+            formula: {
+                title: 'pressão e fluidos',
+                link: '/img/f4.png',
+                type: 'fluido',
+            },
+            simulador: {
+                title: 'pressão e fluidos',
+                link: 'https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_pt_BR.html',
+                type: 'fluidos',
+            },
         },
-	
+
     ]
 
     /***
@@ -297,7 +312,7 @@ $(function() {
     //function video
     videu = (i) => {
         return (`<div id='${quest[i].video.type}'><p>${quest[i].video.title}</p>
-<iframe width="300" height="190"
+<iframe width="444" height="250"
  src="${quest[i].video.link}" frameborder="0" allow="accelerometer; 
 autoplay; encrypted-media; gyroscope; 
 picture-in-picture" allowfullscreen>
@@ -320,12 +335,8 @@ picture-in-picture" allowfullscreen>
 
     //function simulador
     simuladur = (i) => {
-        return (`<div id='${quest[i].simulador.type}'><p>${quest[i].simulador[i].title}</p>
-<iframe width="320" height="140"
- src="${quest[i].simulador.link}" frameborder="0" allow="accelerometer; 
-autoplay; encrypted-media; gyroscope; 
-picture-in-picture" allowfullscreen>
-</iframe>
+        return (`<div id='${quest[i].simulador.type}'><p>${quest[i].simulador.title}</p>
+        <iframe src="${quest[i].simulador.link}" width="800" height="600" scrolling="no" allowfullscreen></iframe>
 <p>_____________________</p>
 <br><br>
 </div>`)

@@ -69,8 +69,8 @@ h1 {
     text-align: center;
     font-size: 200%;
     color: white;
-    background: linear-gradient(32deg, #037b00, #178f14, #0a5d08);
-    background-size: 400% 400%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(216deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(18, 120, 173, 1) 0%, rgba(40, 8, 73, 1) 100%, rgba(115, 22, 213, 1) 100%);
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
@@ -111,8 +111,8 @@ h1 {
 
 .lateral {
     text-align: left;
-    background: linear-gradient(32deg, #037b00, #178f14, #0a5d08);
-    background-size: 400% 400%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(216deg, rgba(2, 0, 36, 1) 0%, rgba(115, 22, 213, 1) 0%, rgba(0, 212, 255, 1) 100%, rgba(40, 8, 73, 1) 100%, rgba(27, 167, 245, 1) 100%);
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
@@ -170,8 +170,8 @@ h1 {
     border-radius: 15px 20px;
     border-color: yellow;
     width: 90%;
-    background: linear-gradient(32deg, #037b00, #178f14, #0a5d08);
-    background-size: 1000% 1000%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(216deg, rgba(2, 0, 36, 1) 0%, rgba(115, 22, 213, 1) 0%, rgba(0, 212, 255, 1) 100%, rgba(40, 8, 73, 1) 100%, rgba(27, 167, 245, 1) 100%);
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
@@ -248,7 +248,7 @@ button {
 
 img {
     height: 22%;
-    width: 42%;
+    width: 32%;
 }
 
 .opt {
