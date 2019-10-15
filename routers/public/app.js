@@ -134,6 +134,21 @@ $(function() {
                 e: "o ar é compressivel",
             },
             img: '/img/q5.png',
+	    video: {
+		title:'pressão e fluidos',
+		link:"https://www.youtube.com/embed/-hQiM9wfswk",
+		type:'fluidos',
+	   },
+	   formula:{
+		title:'pressão e fluidos',
+		link:'/img/f4.png',
+		type:'fluido',
+	  },
+	   simulador:{
+		title:'pressão e fluidos',
+	  	link:'',
+		type:'fluidos',
+	  },
         },
         {
             text: "Um garoto toma refrigerante usando um canudinho. Podemos afirmar corretamente que ao puxar o ar pela boca, o menino:",
@@ -145,6 +160,21 @@ $(function() {
                 e: "reduz a acelaraçăo da gravidade dentro do canudinho"
             },
             img: '/img/q6.png',
+	video: {
+                title:'pressão e fluidos',
+                link:"https://www.youtube.com/embed/-hQiM9wfswk",
+                type:'fluidos',
+           },
+           formula:{
+                title:'pressão e fluidos',
+                link:'/img/f4.png',
+                type:'fluido',
+          },
+           simulador:{
+                title:'pressão e fluidos',
+                link:'',
+                type:'fluidos',
+          },
         },
         {
             text: 'Uma particula, inicialmente na posição A, dentro de um recipiente com àgua, é levada até o ponto B, e em seguida, logo até o ponto C, (Ver figura). A distância, vertical AB é igual a 4cm, e a distância vertical BC é 3cm. Considerando a aceleração da gravidade como g = 10m/s² e a densidade da àgua p = 1000kg/m²,  o módulo da diferença de pressão entre as suas posições iniciais e finais é, em N/m², igual a :',
@@ -166,6 +196,21 @@ $(function() {
                 d: 'd',
             },
             img: '/img/q8.png',
+	video: {
+                title:'pressão e fluidos',
+                link:"https://www.youtube.com/embed/-hQiM9wfswk",
+                type:'fluidos',
+           },
+           formula:{
+                title:'pressão e fluidos',
+                link:'/img/f4.png',
+                type:'fluido',
+          },
+           simulador:{
+                title:'pressão e fluidos',
+                link:'',
+                type:'fluidos',
+          },
         },
         {
             text: 'Um corpo sólido de massa de 500g e volume de 625 centimétros cubicos, encontra-se em repouso no interior de um liquido em equilibrio, conforme a figura. relativamente a esta situação, marque a alternativa incorreta:',
@@ -176,7 +221,22 @@ $(function() {
                 d: 'o corpo desloca um volume de liguido equivalente a massa de 500g',
                 e: 'o volume de liguido que o corpo desloca, é igual ao seu proprio volume',
             },
-            img: '/img/q9.png'
+            img: '/img/q9.png',
+	video: {
+                title:'pressão e fluidos',
+                link:"https://www.youtube.com/embed/-hQiM9wfswk",
+                type:'fluidos',
+           },
+           formula:{
+                title:'pressão e fluidos',
+                link:'/img/f4.png',
+                type:'fluido',
+          },
+           simulador:{
+                title:'pressão e fluidos',
+                link:'',
+                type:'fluidos',
+          },
         },
         {
             text: 'um corpo está submerso em equilibrio no interior de um liguido homogêneo de densidade de 0,7g por centimetro cubico. Se for colocado num recipiente que contenha àgua de densidade de 1g por centimetro cubico, ele:',
@@ -186,8 +246,24 @@ $(function() {
                 c: 'afundarà com velocidade constante',
                 d: 'afundarà com velocidade variavel',
             },
-            img: '/img/q10.png',
-        }
+	img: '/img/q10.png',
+        video: {
+                title:'pressão e fluidos',
+                link:"https://www.youtube.com/embed/-hQiM9wfswk",
+                type:'fluidos',
+           },
+           formula:{
+                title:'pressão e fluidos',
+                link:'/img/f4.png',
+                type:'fluido',
+          },
+           simulador:{
+                title:'pressão e fluidos',
+                link:'',
+                type:'fluidos',
+          },
+        },
+	
     ]
 
     /***
