@@ -71,58 +71,7 @@ $(function() {
         ***/
 
     //questoes
-    quest = [{
-            text: 'Um objeto de massa 500 g possui energia cinética de 2 kJ. Determine a velocidade desse objeto em m/s.Dado: Adote √10 = 3,16',
-            opt: {
-                a: '63,2',
-                b: '50,4',
-                c: '62,8',
-                d: '36,6',
-                e: '31,6'
-            },
-            img: '/img/q1.png',
-            video: {
-                title: 'energia cinética',
-                link: 'https://www.youtube.com/embed/Ht-a2_yNuec',
-                type: 'curiosidades'
-            },
-            formula: {
-                title: 'energia cinética',
-                link: '/img/f0.png',
-                type: 'energia'
-            },
-            simulador: {
-                title: 'energia cinética',
-                link: 'https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_pt_BR.html',
-                type: 'energia'
-            },
-        },
-        {
-            text: 'O bate-estacas é um dispositivo muito utilizado na fase inicial de uma construção. Ele é responsável pela colocação das estacas, na maioria das vezes de concreto, que fazem parte da fundação de um prédio, por exemplo. O funcionamento dele é relativamente simples: um motor suspende, através de um cabo de aço, um enorme peso (martelo), que é abandonado de uma altura, por exemplo, de 10m, e que acaba atingindo a estaca de concreto que se encontra logo abaixo. O processo de suspensão e abandono do peso sobre a estaca continua até a estaca estar na posição desejada. É CORRETO afirmar que o funcionamento do bate-estacas é baseado no princípio de',
-            opt: {
-                a: 'transformação da energia mecânica do martelo em energia térmica da estaca.',
-                b: 'conservação da quantidade de movimento do martelo.',
-                c: 'transformação da energia potencial gravitacional em trabalho para empurrar a estaca.',
-                d: 'colisões do tipo elástico entre o martelo e a estaca.',
-                e: 'transformação da energia elétrica do motor em energia potencial elástica do martelo.',
-            },
-            img: '/img/q2.png',
-            video: {
-                title: 'conservação de energia',
-                link: "https://www.youtube.com/embed/Pu2NO8Mlfhg",
-                type: 'energia',
-            },
-            formula: {
-                title: 'conservação de energia',
-                link: '/img/f1.png',
-                type: 'energia',
-            },
-            simulador: {
-                title: 'conservação de energia',
-                link: 'https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_pt_BR.html',
-                type: 'energia'
-            },
-        },
+    quest = [
 
         {
             text: 'estudando a pressão em fluidos, vê-se que a variação dea pressão nas aguas do mar é proporcional a profundidade h. No entando, a variação da pressão atmosférica quando se sobe montanhas elevadas, não é exatamente proporcional à altura. Isto se deve ao fato:',
